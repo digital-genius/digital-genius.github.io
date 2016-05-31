@@ -28,7 +28,11 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+.post-list-wrapper{
+    border-top: 1px #b2b2b2 solid;
+    padding: 3px;
+    padding-bottom: 0;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
