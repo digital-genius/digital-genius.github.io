@@ -1,4 +1,4 @@
-# digital-genius.github.io
+# README
 
 This is the backend of our [website](http://digital-genius.github.io).
 
