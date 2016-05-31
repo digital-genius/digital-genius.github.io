@@ -1,6 +1,6 @@
 # digital-genius.github.io
 
-This is the backend of our [website](digital-genius.github.io).
+This is the backend of our [website](http://digital-genius.github.io).
 
 It is using a Jekyll Static Site Generator meaning that the content is all in the root directory and when the `jekyll build` command is run from the CLI it is collected into the pages and converted from Markdown or whatever format it is stored in into HTML which is stored in the `_Site` directory.
 
