@@ -47,11 +47,15 @@ $on-laptop:        800px;
     }
 }
 
-
+@media screen and (max-width: 600px) {
+    .spacer {
+        display: none;
+    }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+    "base",
+    "layout",
+    "syntax-highlighting"
+    ;
