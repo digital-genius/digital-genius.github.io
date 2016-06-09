@@ -5,10 +5,7 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 2px solid $grey-color;
     min-height: 56px;
-
     background-color: $brand-color;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
@@ -20,7 +17,6 @@
     margin-bottom: 0;
     float: left;
 
-    &,
     &:visited {
         color: $grey-color-dark;
     }
@@ -36,18 +32,40 @@
 .site-nav {
     float: right;
     line-height: 56px;
+    
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
 
+        li {
+            display: inline;
+            padding: 0px;
+            margin: 0px;
+            a {
+                
+            }
+        }
+    }
+    
     .menu-icon {
         display: none;
     }
 
     .page-link {
+        display: inline;
         color: $grey-color-dark;
         line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
+        padding: 5px 15px;
+        margin: 0px;
+        border: solid 1px $brand-color;
+        -webkit-transition: background-color 0.2s, border 0.2s, padding 0.2s;
+        transition: background-color 0.2s, border 0.2s, padding 0.2s;
+        
+        &:hover {
+            background-color: $background-color;
+            border: solid 1px $grey-color-dark;
+            text-decoration: none;
         }
     }
 
@@ -78,7 +96,11 @@
                 }
             }
         }
-
+        
+        .spacer {
+            display: none;
+        }
+        
         .trigger {
             clear: both;
             display: none;
@@ -87,16 +109,6 @@
         &:hover .trigger {
             display: block;
             padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
         }
     }
 }

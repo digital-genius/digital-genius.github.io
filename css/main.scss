@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #FDFDFD;
 $brand-color:      #63bbe9;
 
 $grey-color:       #9f9f9f;
@@ -44,12 +44,6 @@ $on-laptop:        800px;
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .spacer {
-        display: none;
     }
 }
 
